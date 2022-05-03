@@ -1,0 +1,28 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #444;
+  color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  
+  /* 
+   * content-box considera a borda a mais do tamanho pedido
+   * border-box considera a borda dentro do tamanho pedido
+   */
+}
+/* Só funciona no global.css, ter essas pseudo-classe "root" e criar variáveis  */
+:root{
+  --area-porta-altura: 310px;
+  --area-porta-largura: 200px;
+}

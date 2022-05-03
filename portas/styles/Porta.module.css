@@ -1,0 +1,68 @@
+.area {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: var(--area-porta-largura); /* Largura */
+    height: var(--area-porta-altura); /* Altura */
+    margin: 5px;
+}
+
+.estrutura {
+    display: flex;
+    flex-grow: 1; /* Crecer e ocupar o espaço inteiro definido na area */
+    flex-direction: column-reverse;
+    border-left: 5px solid brown;
+    border-top: 5px solid brown;
+    border-right: 5px solid brown;
+    background-color: #0005; /* Usando 3 '0' o último némero passa ser a transparência*/
+    width: 90%;
+    
+}
+
+.porta {
+    display: flex;
+    /* O número fica em cima e a maçaneta em baixo, por isso column */
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    background-color: chocolate;
+    padding: 15px;
+
+}
+
+.numero {
+    font-size: 3rem;
+}
+
+.macaneta {
+    position: absolute;
+    /* display: flex; */
+    align-self: flex-start;
+    top: calc(0.45 * var(--area-porta-altura) );
+    height: 20px;
+    width: 20px;
+    border-radius: 10px; /* Fica redonda */
+    background-color: brown;
+}
+
+.chao {
+    height: 10px;
+    width: 100%; /* Ocupa o espaço inteiro da porta */
+    background-color: #ddd;
+}
+
+.selecionada {
+    border-left: 5px solid yellow;
+    border-top: 5px solid yellow;
+    border-right: 5px solid yellow;
+}
+
+.selecionada .numero {
+    color: yellow;
+}
+
+.selecionada .macaneta {
+    background-color: yellow;
+}
+
